@@ -98,7 +98,6 @@ void setup() {
   pinMode(IN4, OUTPUT);
   Serial.begin(115200);
   Serial.println("步进电机控制初始化完毕：");
-  
 }
 
 void loop() {
@@ -112,7 +111,7 @@ void loop() {
       Serial.println("逆时针旋转一圈");
       rotateAngle(360, false);
     } else {
-      Serial.println("未知命令，请输入 w/s/a/d 来控制旋转");
+      Serial.println("未知命令，请输入 w/s 来控制旋转");
     }
   }
 }
